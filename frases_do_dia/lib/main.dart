@@ -8,7 +8,11 @@
 
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main(){
+  runApp( MaterialApp(
+    title: "Frases do dia",
+    home: Column(),
+    //home: Container(color: Colors.black,),
 
 /// This Widget is the main application widget.
 class MyApp extends StatelessWidget {
