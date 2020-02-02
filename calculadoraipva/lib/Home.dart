@@ -22,7 +22,7 @@ class _HomeState extends State<Home> {
     }else{
       setState(() {
         precoveiculo= precoveiculo * 0.04;
-        _textoResultado = "Valor do IPVA " + precoveiculo.toStringAsFixed(2) + " reais";
+        _textoResultado = "Valor do IPVA R\$ " + precoveiculo.toStringAsFixed(2);
       });
 
       //_limparCampos();
@@ -67,7 +67,8 @@ class _HomeState extends State<Home> {
               TextField(
                 keyboardType: TextInputType.number,
                 decoration: InputDecoration(
-                    labelText: "Valor do Veiculo ex: 999999.99"
+                  prefixText: "R\$",
+                    labelText: "Valor do Veiculo ex: R\$ 999999.99"
                 ),
                 style: TextStyle(
                     fontSize: 22
